@@ -1,0 +1,27 @@
+https://vercel.com/new/suresh-mouryas-projects-95a9e943
+github account:suresh.mourya@hotmail.com
+
+vercel postgress
+POSTGRES_URL="postgres://default:0SJIrvGAEt7u@ep-muddy-firefly-a4azi55a-pooler.us-east-1.aws.neon.tech:5432/verceldb?sslmode=require"
+POSTGRES_PRISMA_URL="postgres://default:0SJIrvGAEt7u@ep-muddy-firefly-a4azi55a-pooler.us-east-1.aws.neon.tech:5432/verceldb?sslmode=require&pgbouncer=true&connect_timeout=15"
+POSTGRES_URL_NO_SSL="postgres://default:0SJIrvGAEt7u@ep-muddy-firefly-a4azi55a-pooler.us-east-1.aws.neon.tech:5432/verceldb"
+POSTGRES_URL_NON_POOLING="postgres://default:0SJIrvGAEt7u@ep-muddy-firefly-a4azi55a.us-east-1.aws.neon.tech:5432/verceldb?sslmode=require"
+POSTGRES_USER="default"
+POSTGRES_HOST="ep-muddy-firefly-a4azi55a-pooler.us-east-1.aws.neon.tech"
+POSTGRES_PASSWORD="0SJIrvGAEt7u"
+POSTGRES_DATABASE="verceldb"
+
+install the Vercel Postgres SDK
+    npm i @vercel/postgres
+
+Prisma ORM is a next-generation Node.js and TypeScript ORM that unlocks a new level of developer experience 
+when working with databases thanks to its intuitive data model, automated migrations, type-safety & auto-completion.
+    https://www.prisma.io/docs/getting-started  
+
+    noStore();
+
+Debouncing is a programming practice that limits the rate at which a function can fire. 
+In our case, you only want to query the database when the user has stopped typing.
+    npm i use-debounce
+
+    https://nextjs.org/learn/dashboard-app/mutating-data
