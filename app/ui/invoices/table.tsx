@@ -48,6 +48,7 @@ export default async function InvoicesTable({
                   </div>
                   <div className="flex justify-end gap-2">
                     <UpdateInvoice id={invoice.id} />
+                    {/*Need to Add confirmation box for the Delete*/}
                     <DeleteInvoice id={invoice.id} />
                   </div>
                 </div>

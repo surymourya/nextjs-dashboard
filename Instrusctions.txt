@@ -25,3 +25,32 @@ In our case, you only want to query the database when the user has stopped typin
     npm i use-debounce
 
     https://nextjs.org/learn/dashboard-app/mutating-data
+
+    By default, Next.js includes the eslint-plugin-jsx-a11y plugin to help catch accessibility issues early.
+     For example, this plugin warns if you have images without alt text, use the aria-* and role attributes incorrectly, and more.
+     
+     https://www.npmjs.com/package/eslint-plugin-jsx-a11y
+
+        Add next lint as a script in your package.json
+             "lint": "next lint"
+        Run the following command on the Terminal windows
+             npm run lint
+
+             https://nextjs.org/learn/dashboard-app/adding-authentication
+
+
+We will be using NextAuth.js to add authentication to your application. NextAuth.js abstracts 
+away much of the complexity involved in managing sessions, sign-in and sign-out, and other aspects of authentication. 
+
+Install Next-Auth by using following command
+        npm install next-auth@beta
+
+Next, generate a secret key for your node -e "console.logs(crypto.randomBytes(32).toString('hex'))"application. This key is used to encrypt cookies, ensuring the security of user sessions. You can do this by running the following command in your terminal:
+    Command : openssl rand -base64 32
+    Secret key : 9wAphOjsEZ/yrpTNcn0R7Fgdv0QbPdQc5AG+aQYwgS4=
+    https://tecadmin.net/install-openssl-on-windows/
+
+
+Credentials
+Email: user@nextmail.com
+Password: 123456
